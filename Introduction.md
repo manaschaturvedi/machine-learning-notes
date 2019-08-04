@@ -12,6 +12,6 @@ to the science and engineering of building machines capable of doing various use
 without being explicitly programmed to do so.
 
 So essentially:
-- We take some data to train the Machine Learning model
-- The model learns patterns from this data
-- Classifies new data it has not seen before
+- we take some data to train the Machine Learning model
+- the model learns patterns from this data
+- classifies new data it has not seen before
