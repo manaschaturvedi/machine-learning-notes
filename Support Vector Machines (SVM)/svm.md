@@ -30,3 +30,19 @@ For two-dimensional feature vectors, the problem and the solution can be visuali
 ![alt text](images/svm5.png)
 
 The blue and orange circles represent, respectively, positive and negative examples, and the line given by wx−b=0 is the decision boundary.
+
+In order for the SVM to come up with a decision boundary with the largest margin, we need
+
+![alt text](images/svm6.png)
+
+Why, by minimizing the norm of w, do we find the highest margin between the two classes? Geometrically, the equations wx−b=1and wx−b=−1 define two parallel hyperplanes, as you seen in the image above. The distance between these hyperplanes is given by 2/<sub>||w||</sub>, so the smaller the norm ||w||, the larger the distance between these two hyperplanes. That’s how Support Vector Machines work. 
+
+This particular version of the algorithm builds the so-called linear model. It’s called linear because the decision boundary is a straight line (or a plane, or a hyperplane). 
+
+However, SVMs don't perform well when we require a non-linear decision boundary to separate our training set. In some cases, it could be impossible to perfectly separate the two groups of points because of noise in the data, errors of labeling, or outliers. In such cases, we can use 'kernels'. A kernel is basically a function that maps the data to a higher dimension where the data is separable.
+
+Popular kernel functions:
+- Gaussian
+- Polynomial
+
+SVMs are thus powerful in the sense that they can also generate non-linear decision boundaries.
