@@ -19,7 +19,9 @@ We will also convert each label into either 1 (spam) or -1 (non-spam).
 
 In geometry, a hyperplane is a subspace whose dimension is one less than that of its ambient space. If a space is 3-dimensional then its hyperplanes are the 2-dimensional planes, while if the space is 2-dimensional, its hyperplanes are the 1-dimensional lines. 
 
-We would also prefer that the hyperplane separates positive examples from negative ones with the largest margin. The margin is the distance between the closest examples of two classes, as defined by the decision boundary. A large margin contributes to a better generalization, that is how well the model will classify new examples in the future. Hence, SVM is also known as a 'large margin classifier'.
+We would also prefer that the hyperplane separates positive examples from negative ones with the largest margin. The margin is the distance between the closest examples of two classes, as defined by the decision boundary. A large margin contributes to a better generalization, that is how well the model will classify new examples in the future. Hence, SVM is also known as a 'large margin' or 'discriminative' classifier.
+
+SVM finds an optimal hyperplane which helps in classifying new data points.
 
 The constraint that we aim to satisfy in SVM is this:
 
@@ -35,7 +37,9 @@ In order for the SVM to come up with a decision boundary with the largest margin
 
 ![alt text](images/svm6.png)
 
-Why, by minimizing the norm of w, do we find the highest margin between the two classes? Geometrically, the equations wx−b=1and wx−b=−1 define two parallel hyperplanes, as you seen in the image above. The distance between these hyperplanes is given by 2/<sub>||w||</sub>, so the smaller the norm ||w||, the larger the distance between these two hyperplanes. That’s how Support Vector Machines work. 
+Why, by minimizing the norm of w, do we find the highest margin between the two classes? Geometrically, the equations wx−b=1and wx−b=−1 define two parallel hyperplanes, as you seen in the image above. The distance between these hyperplanes is given by 2/<sub>||w||</sub>, so the smaller the norm ||w||, the larger the distance between these two hyperplanes. That’s how Support Vector Machines work.
+
+## SVM Kernels ##
 
 This particular version of the algorithm builds the so-called linear model. It’s called linear because the decision boundary is a straight line (or a plane, or a hyperplane). 
 
@@ -46,3 +50,5 @@ Popular kernel functions:
 - Polynomial
 
 SVMs are thus powerful in the sense that they can also generate non-linear decision boundaries.
+
+The SVM algorithm is implemented in practice using a kernel. SVM uses a technique called the kernel trick. Here, the kernel takes a low-dimensional input space and transforms it into a higher dimensional space. Kernel trick helps you to build a more accurate classifier.
