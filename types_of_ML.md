@@ -14,6 +14,8 @@ The label y <sub>i</sub> can be either an element belonging to a finite set of c
 
 The goal of a supervised learning algorithm is to use the dataset to produce a model that takes a feature vector x as input and outputs information that allows deducing the label for this feature vector.
 
+![alt text](images/supervised_learning_model_representation.png)
+
 ## Unsupervised Learning ##
 In unsupervised learning, the dataset is a collection of unlabeled examples { x <sub>i</sub> } <sup>N</sup> <sub>i=1</sub>. Again, x is a feature vector, and the goal of an unsupervised learning algorithm is to create a model that takes a feature vector x as input and either transforms it into another vector or into a value that can be used to solve a practical problem. For example, in clustering, the model returns the id of the cluster for each feature vector in the dataset. In dimensionality reduction, the output of the model is a feature vector that has fewer features than the input x; in outlier detection, the output is a real number that indicates how x is different from a “typical” example in the dataset.
 
