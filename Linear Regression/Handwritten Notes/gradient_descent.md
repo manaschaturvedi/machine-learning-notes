@@ -1,0 +1,1 @@
+![alt text](images/gradient_descent_1.jpg)
