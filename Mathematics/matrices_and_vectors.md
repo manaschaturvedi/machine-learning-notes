@@ -1,0 +1,7 @@
+![alt text](images/matrices_1.png)
+![alt text](images/matrices_2.png)
+![alt text](images/matrices_3.png)
+![alt text](images/matrices_4.png)
+![alt text](images/matrices_5.png)
+![alt text](images/matrices_6.png)
+![alt text](images/matrices_7.png)
